@@ -1,8 +1,15 @@
 <form [formGroup]="form">
-  <!--
-    Try nested control and error message
-  -->
   <app-control formControlName="firstName"></app-control>
+  <app-error controlName="firstName"></app-error>
+
+  <!--
+    A error component would need the ngForm and the control
+
+    https://github.com/angular/components/blob/fdb30adabe87a92bccec8dbc9122ec85418200c9/src/material/input/input.ts#L282
+
+    https://github.com/angular/components/blob/fdb30adabe87a92bccec8dbc9122ec85418200c9/src/material/core/common-behaviors/error-state.ts#L58  
+  -->
+
   <!--
   <input type="text" formControlName="firstName" />
   -->

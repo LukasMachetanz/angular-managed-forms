@@ -10,6 +10,8 @@ import {
   Validators,
 } from '@angular/forms';
 import { Subject } from 'rxjs';
+import { ErrorComponent } from '../error/error.component';
+import { NestedControlComponent } from '../nested-control/nested-control.component';
 
 @Component({
   selector: 'app-control',
@@ -29,7 +31,7 @@ import { Subject } from 'rxjs';
     },
   ],
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, NestedControlComponent, ErrorComponent],
 })
 export class ControlComponent implements ControlValueAccessor, Validator {
   readonly #blur$ = new Subject<void>();
