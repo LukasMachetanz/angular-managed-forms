@@ -1,0 +1,10 @@
+/**
+ * Defined somewhere else
+ */
+$errorSelector: ':host-context(.ng-submitted) :host.ng-invalid, :host.ng-invalid.ng-dirty.ng-touched';
+
+#{$errorSelector} {
+  input {
+    border-color: red;
+  }
+}

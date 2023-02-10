@@ -1,0 +1,13 @@
+/* Add application styles & imports to this file! */
+
+/**
+ * Do we really need the :has selector
+ * 
+ * https://github.com/angular/components/blob/*f8dd0180cd77b52d980c1ea50b995bb10b9b2d82/src/material/core/error/error-options.ts#L22
+ */
+/*
+.ng-submitted input.ng-invalid,
+input.ng-invalid.ng-dirty.ng-touched {
+  border-color: red;
+}
+*/
