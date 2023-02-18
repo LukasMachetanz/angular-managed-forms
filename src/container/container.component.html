@@ -1,6 +1,10 @@
 <form [formGroup]="form">
   <app-control formControlName="firstName"></app-control>
+  <app-control type="text" formControlName="lastName"></app-control>
+
+  <!--
   <app-error controlName="firstName"></app-error>
+  -->
 
   <!--
     A error component would need the ngForm and the control

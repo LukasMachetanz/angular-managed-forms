@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ErrorComponent } from '../error/error.component';
 import { ControlComponent } from '../control/control.component';
 
@@ -14,6 +14,7 @@ import { ControlComponent } from '../control/control.component';
 export class ContainerComponent {
   public readonly form = this.formBuilder.group({
     firstName: [''], // Validators.required
+    lastName: ['', Validators.required],
   });
 
   constructor(private readonly formBuilder: FormBuilder) {}

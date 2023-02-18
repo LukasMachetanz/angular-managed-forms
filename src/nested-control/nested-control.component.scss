@@ -8,3 +8,10 @@ $errorSelector: ':host-context(.ng-submitted) :host.ng-invalid, :host.ng-invalid
     border-color: red;
   }
 }
+
+:host-context(form.ng-submitted .ng-invalid),
+:host-context(form .ng-invalid) :host.ng-dirty.ng-touched {
+  input {
+    border-color: red;
+  }
+}

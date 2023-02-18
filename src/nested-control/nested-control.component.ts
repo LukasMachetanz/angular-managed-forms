@@ -69,5 +69,5 @@ export class NestedControlComponent implements ControlValueAccessor, Validator {
     this.#blur$.next();
   }
 
-  protected form = new FormControl('', Validators.required);
+  protected form = new FormControl('');
 }
